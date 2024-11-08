@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+    <style>
+      body {
+        background-image: url(images/bg-intro-desktop.png);
+      }
+    </style>
+  </head>
+
+  <body class="bg-red-400 justify-center items-center flex h-screen">
+    <div class="flex">
+      <div class="justify-center items-center flex flex-col p-14">
+        <h1 class="text-white text-5xl font-bold max-w-sm">
+          Learn to code by watching others
+        </h1>
+        <p class="max-w-sm text-white mt-10">
+          see how experienced developers solve problems in real-time wathching
+          scripted tutorials is great.but understanding how developers think is
+          invaluable
+        </p>
+      </div>
+      <div>
+        <div
+          class="bg-blue-900 flex max-w-md justify-center text-center p-2 rounded-md mb-5"
+        >
+          <p class="text-white font-bold">Try it free 7days</p>
+          <p class="text-white">then $20/mo.thereafter</p>
+        </div>
+        <div class="bg-white flex flex-col gap-6 p-8 relative rounded-md w-full">
+          <div class="w-full">
+            <input type="text" name="name" placeholder="Name" class="p-1 border-2 w-full input1" />
+            <img
+              src="images/icon-error.svg"
+              alt=""
+              class="h-6 w-6 absolute right-11 top-9 hidden image1"
+            />
+            <p class="text-red-600 hidden error1">First Name cannot be empty</p>
+          </div>
+          <div>
+          <input type="text" name="name" placeholder="Last Name" class="p-1 border-2 w-full input2" />
+          <img
+            src="images/icon-error.svg"
+            alt=""
+            class="h-6 w-6 absolute right-11 top-[120px] hidden image2"
+          />
+          <p class="text-red-600 hidden error2">Last Name cannot be empty</p>
+        </div>
+        <div>
+          <input name="email"
+            type="text"
+            placeholder="email adderees"
+            class="p-1 border-2 w-full input3"
+          />
+          <img
+            src="images/icon-error.svg"
+            alt=""
+            class="h-6 w-6 absolute right-11 top-[205px] hidden image3"
+          />
+          <p class="text-red-600 hidden error3">Look like this is not an email</p>
+        </div>
+        <div>
+          <input type="password" name="password" placeholder="password" class="p-1 border-2 w-full input4" />
+          <img
+            src="images/icon-error.svg"
+            alt=""
+            class="h-6 w-6 absolute right-11 top-[290px] hidden image4"
+          />
+          <p class="text-red-600 hidden error4">Password cannot be empty</p>
+        </div>
+          <div class="bg-green-600 p-2 text-white justify-center items-center flex button cursor-pointer">
+            <p>CLAIM YOUR FREE TRAIL</p>
+          </div>
+          <div class="flex">
+            <p class="text-gray-300 text-xs">
+              By clicking the button.you are agreeing to our
+            </p>
+            <p class="text-red-600 font-bold text-xs ml-2">
+              Terms and Services
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
